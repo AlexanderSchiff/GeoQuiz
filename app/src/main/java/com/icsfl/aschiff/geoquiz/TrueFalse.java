@@ -4,14 +4,14 @@ package com.icsfl.aschiff.geoquiz;
  * Created by aschiff on 8/11/2014.
  */
 public class TrueFalse {
-    private int mQuestion;
+    private int mQuestionIndex;
     private boolean mTrueQuestion;
 
     public TrueFalse() {
         this(0, true);
     }
-    public TrueFalse(int question, boolean trueQuestion) {
-        mQuestion = question;
+    public TrueFalse(int questionIndex, boolean trueQuestion) {
+        mQuestionIndex = questionIndex;
         mTrueQuestion = trueQuestion;
     }
     //test blah
@@ -19,15 +19,15 @@ public class TrueFalse {
     /**
      * @return {int}
      */
-    public int getQuestion() {
-        return mQuestion;
+    public int getQuestionIndex() {
+        return mQuestionIndex;
     }
 
     /**
-     * @param question set mQuestion to question.
+     * @param questionIndex set mQuestionIndex to questionIndex.
      */
-    public void setQuestion(int question) {
-        mQuestion = question;
+    public void setQuestionIndex(int questionIndex) {
+        mQuestionIndex = questionIndex;
     }
 
     /**
@@ -38,7 +38,7 @@ public class TrueFalse {
     }
 
     /**
-     * @param trueQuestion
+     * @param trueQuestion set mTrueQuestion to trueQuestion.
      */
     public void setTrueQuestion(boolean trueQuestion) {
         mTrueQuestion = trueQuestion;
